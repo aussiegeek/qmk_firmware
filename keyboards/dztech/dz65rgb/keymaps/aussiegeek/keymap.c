@@ -8,9 +8,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
           KC_LSFT,            KC_Z,     KC_X,     KC_C,     KC_V,     KC_B,     KC_N,     KC_M,     KC_COMM,  KC_DOT,   KC_SLSH,  KC_RSFT,            KC_UP,    KC_MUTE,
           MO(1),              KC_LALT,  KC_LGUI,                      KC_SPC,                                 KC_RGUI,  KC_RALT,  MO(1),    KC_LEFT,  KC_DOWN,  KC_RGHT),
 	[1] = LAYOUT_65_ansi(
-          KC_GRAVE,           _______,  _______,  _______,  _______,  _______,  _______,  KC_MPRV,  KC_MPLY,  KC_MNXT,  KC_MUTE,  KC_VOLD,  KC_VOLU,  KC_DEL,   KC_MSTP,
-          _______,            _______,  KC_UP,     RGB_TOG, RGB_MOD, RGB_RMOD,  _______,  _______,  RGB_SPI,  RGB_SPD,  KC_PGUP,  KC_HOME,  _______,  RESET,    KC_MNXT,
-          _______,            KC_LEFT,  KC_DOWN,   KC_RGHT, RGB_HUI, RGB_HUD,   RGB_SAI,  RGB_SAD,  RGB_VAI,  RGB_VAD,  KC_PGDN,  KC_END,   KC_PENT,            KC_MPRV,
-          _______,            BL_TOGG,  BL_STEP,   BL_ON,   BL_OFF,  BL_INC,    BL_DEC,   BL_BRTG,  _______,  _______,  _______,  _______,            KC_PGUP,  KC_MUTE,
-          KC_TRNS,            _______,  _______,                      _______,                                _______,  _______,  KC_TRNS,  KC_HOME,  KC_PGDN,  KC_END)
+          KC_GRAVE,           _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  KC_DEL,   KC_MSTP,
+          _______,            _______,  _______,  RGB_TOG,  RGB_MOD,  RGB_RMOD, _______,  _______,  RGB_SPI,  RGB_SPD,  _______,  _______,  _______,  RESET,    KC_MNXT,
+          _______,            _______,  _______,  _______,  RGB_HUI,  RGB_HUD,  RGB_SAI,  RGB_SAD,  RGB_VAI,  RGB_VAD,  _______,  _______,  KC_RETURN,          KC_MPRV,
+          _______,            _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,            KC_PGUP,  KC_MUTE,
+          _______,            _______,  _______,                      _______,                                _______,  _______,  _______,  KC_HOME,  KC_PGDN,  KC_END)
 };
