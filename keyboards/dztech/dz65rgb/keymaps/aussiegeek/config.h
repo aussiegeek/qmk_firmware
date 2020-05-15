@@ -1,1 +1,2 @@
 #define GRAVE_ESC_GUI_OVERRIDE
+#define TAPPING_TERM 200
