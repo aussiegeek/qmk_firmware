@@ -9,6 +9,9 @@ qk_tap_dance_action_t tap_dance_actions[] = {
   [TD_CTRL_CAPS]  = ACTION_TAP_DANCE_DOUBLE(KC_LCTRL, KC_CAPS)
 };
 
+#define CAPS_LOCK_LED 30
+#define RGB_OFF 0x00, 0x00, 0x00
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[0] = LAYOUT_65_ansi(
           KC_GESC,            KC_1,     KC_2,     KC_3,     KC_4,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     KC_MINS,  KC_EQL,   KC_BSPC,  KC_MPLY,
@@ -26,7 +29,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 void rgb_matrix_indicators_user(void) {
     if (host_keyboard_led_state().caps_lock) {
-        rgb_matrix_set_color_all(0x00, 0x00, 0x00);
-        rgb_matrix_set_color(30, 0xFF, 0xFF, 0xFF);
+        rgb_matrix_set_color_all(RGB_OFF);
+        rgb_matrix_set_color(CAPS_LOCK_LED, RGB_WHITE);
     }
 }
